@@ -20,5 +20,5 @@ COPY . .
 RUN npm run build
 
 EXPOSE 5000
-CMD ["node","backend/server.mjs"]
+CMD ["node","backend/server.mjs --experimental-modules"]
 
