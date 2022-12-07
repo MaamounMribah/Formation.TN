@@ -3,11 +3,16 @@ import express from 'express';
 import path from 'path';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import config from './config';
-import userRoute from './routes/userRoute';
-import productRoute from './routes/productRoute';
-import orderRoute from './routes/orderRoute';
-import uploadRoute from './routes/uploadRoute';
+import config from './config.js';
+import userRoute from './routes/userRoute.js';
+import productRoute from './routes/productRoute.js';
+import orderRoute from './routes/orderRoute.js';
+import uploadRoute from './routes/uploadRoute.js';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const mongodbUrl = config.MONGODB_URL;
 mongoose

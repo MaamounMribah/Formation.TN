@@ -1,6 +1,6 @@
 /* eslint-disable */
 import jwt from 'jsonwebtoken';
-import config from './config';
+import config from './config.js';
 const getToken = (user) => {
   return jwt.sign(
     {
