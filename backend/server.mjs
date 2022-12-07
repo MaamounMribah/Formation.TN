@@ -10,8 +10,8 @@ import orderRoute from './routes/orderRoute.js';
 import uploadRoute from './routes/uploadRoute.js';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
+const url=import.meta.url;
+const __filename = fileURLToPath(url);
 const __dirname = dirname(__filename);
 
 const mongodbUrl = config.MONGODB_URL;
