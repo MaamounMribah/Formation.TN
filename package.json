@@ -2,7 +2,7 @@
   "name": "Formation.TN",
   "version": "1.0.0",
   "description": "Demo : https://amazonaapp.herokuapp.com/",
-  "main": "backend/server.mjs",
+  "main": "backend/server.js",
   "type": "module",
   "dependencies": {
     "aws-sdk": "^2.702.0",
@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/basir/amazona#readme",
   "engines": {
-    "node": "12.4.0",
-    "npm": "6.9.0"
+    "node": "18.9.1",
+    "npm": "8.19.1"
   }
 }
